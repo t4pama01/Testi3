@@ -1,9 +1,9 @@
 <?php
-class Asiakas_model extends CI_Model {
+class Testi_model extends CI_Model {
 
 	public function getAsiakas() {
 		$this->db->select('*');
-		$this->db->from('asiakas');
+		$this->db->from('testi');
 		return $this->db->get()->result_array();
 	}
 }
